@@ -1,6 +1,8 @@
 # ExPidController
 
-**TODO: Add description**
+Implements a PID Controller as a GenServer.
+
+For more details about PID Controllers see [the Wikipedia article](https://en.wikipedia.org/wiki/PID_controller).
 
 ## Installation
 
