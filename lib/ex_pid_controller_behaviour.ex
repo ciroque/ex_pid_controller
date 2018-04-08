@@ -8,11 +8,11 @@ defmodule ExPidControllerBehaviour do
   @typedoc """
   The values needed to initialize the PID Controller.
 
-  `proportional_gain`: Used to tune the proportional calculation,
+  `proportional_gain`: Used to tune the proportional calculation.
 
-  `integral_gain`: Used to tune the integral calculation,
+  `integral_gain`: Used to tune the integral calculation.
 
-  `derivative_gain`: Used to tune th derivative calculation,
+  `derivative_gain`: Used to tune th derivative calculation.
 
   """
   @type initialization_t :: %{
@@ -36,7 +36,7 @@ defmodule ExPidControllerBehaviour do
   @type process_variable_t :: float()
 
   @typedoc """
-  Control variable.
+  Control variable. The corrective value to apply in the control function.
 
   The result of the PID calculation which represents the Manipulated Value that incorporates the past, current, and
   predicted future value of the error.
