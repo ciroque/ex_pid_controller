@@ -44,11 +44,6 @@ defmodule ExPidControllerBehaviour do
   @type control_variable_t :: float()
 
   @doc """
-  Initialze the instance.
-  """
-  @callback start_link(initialization_t) :: GenServer.on_start()
-
-  @doc """
   Main entry point to trigger PID calcaulations.
   """
   @callback input(%{set_point: set_point_t, process_variable: process_variable_t}) ::
